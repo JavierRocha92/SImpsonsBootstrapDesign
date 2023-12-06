@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    border-radius: 2px;
 }
 html{
     scroll-behavior: smooth;
@@ -12,9 +13,15 @@ body{
     justify-content: center;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    border: 1px solid red;
+}
+.main{
+    border: 2px solid black;
+    
+}
+.aside{
+    border: 2px solid black;
+
 }
 
