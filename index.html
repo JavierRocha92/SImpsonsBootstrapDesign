@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav_horizontal.css">
     <link rel="stylesheet" href="./css/nav_vertical.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- FONT-AWESOME REMOTE LIBRARY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,16 +22,16 @@
     <div class="container row">
         <header class="header d-none d-xl-flex">
             <!-- header carrousel -->
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel w-100 slider" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-item h-100 active">
+                    <img src="./assets/images/slider/slider_01.jpg" class="slider__image d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-item h-100">
+                    <img src="./assets/images/slider/slider__02.jpg" class="slider__image d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                  <div class="carousel-item h-100">
+                    <img src="./assets/images/slider/slider__03.webp" class="slider__image d-block w-100" alt="...">
                   </div>
                 </div>
               </div>
@@ -78,21 +79,21 @@
             </div>
           </nav><!-- nav horizontal final -->
           <!-- nav vertical begin -->
-          <nav class="nav_vertical  d-none d-xl-block col-1">
-              <div class="d-flex align-items-start nav_vertical__icons">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <button class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fa-solid fa-house"></i></button>
-                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-user"></i></button>
-                  <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><i class="fa-solid fa-film"></i></button>
-                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-message"></i></button>
-                  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-gear"></i></button>
+          <nav class="nav_vertical p-0 d-none d-xl-block col-1">
+              <div class="d-flex align-items-start nav_vertical__icons w-100">
+                <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a href="#" class="nav-link p-0 w-100 m-2 ms-4 ms-4" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false"><img class="nav_vertical__icon" src="./assets/images/icons/home__icon.png" alt=""></a>
+                  <a href="#" class="nav-link p-0 w-100 m-2 ms-4" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src="./assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
+                  <a href="#" class="nav-link p-0 w-100 m-2 ms-4" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false"><img src="./assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
+                  <a href="#" class="nav-link p-0 w-100 m-2 ms-4" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img src="./assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
+                  <a href="#" class="nav-link p-0 w-100 m-2 ms-4" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src="./assets/images/icons/merch__icon.png" alt="" class="nav_vertical__image"></a>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                  <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">home</div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">login</div>
+                  <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">films</div>
+                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">messages</div>
+                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">settings</div>
                 </div>
               </div>
           </nav>
@@ -198,7 +199,7 @@
                 </div>
               </div>
         </aside>
-        <footer class="footer row mt-5 p-5">
+        <footer class="footer row mt-5 p-5 col-xl-11 offset-1">
             <div class="footer__header col-8 row bg-primary text-light text-center">
                 <h2 class="footer__title col-12 p-2">
                     Featurings
