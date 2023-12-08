@@ -1,0 +1,99 @@
+.card{
+    height: 500px !important;
+    border: none;
+}
+.card__visor{
+    background-position: 0px -80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative !important;
+    overflow: hidden;
+    
+}
+.card__visor--first{
+    background-image: url(../assets/images/breakingNews/news__01.jpg);
+}
+.card__visor--second{
+    background-image: url(../assets/images/breakingNews/news__02.jpg);
+}
+.card__visor--third{
+    background-image: url(../assets/images/breakingNews/news__03.webp);
+}
+.card__visor--fourth{
+    background-image: url(../assets/images/breakingNews/news__04.webp);
+}
+.card__visor--fiveth{
+    background-image: url(../assets/images/breakingNews/news__05.jpg);
+}
+.card__visor--sixth{
+    background-image: url(../assets/images/breakingNews/news__06.png);
+}
+.card__visor--seventh{
+    background-image: url(../assets/images/breakingNews/news__07.avif);
+}
+.card__visor--eigth{
+    background-image: url(../assets/images/breakingNews/news__08.webp);
+}
+.card__icon{
+    position: absolute;
+    width: 20%;
+    top: 45%;
+    z-index: 10;
+    right: 15%;
+}
+.card__main{
+    background: rgb(255,252,0);
+    background: linear-gradient(90deg, rgba(255,252,0,1) 0%, rgba(104,160,185,1) 0%, rgba(247,215,86,1) 100%);
+    border-radius: 17% 83% 100% 0% / 15% 27% 73% 85% ; 
+    position: absolute !important;
+    height: 500px;
+    width: 105%;
+    top: 50%;
+}
+
+.card__content{
+    width: 50%;
+    text-shadow: 1px 1px 1px black;
+}
+.card-text{
+    margin-top: 30px;
+    width: 100%;
+}
+.card__btn{
+    border: 2px solid white !important;
+    transition: all 0.3s ease;
+}
+.card__btn:hover{
+    transform: scale(1.1);
+    color: black !important;
+    border: 2px solid black !important;
+}
+.card__date{
+    margin-top: 90px;
+}
+/* aside */
+.card--aside{
+    height: 400px !important;
+}
+.card__header{
+    height: 30%;
+    background-color: rgba(247,215,86);
+}
+.card-img-top{
+    width: 40%;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.card__icon--red{
+    color: red;
+}
+.card__icon--magenta{
+    color: magenta;
+}
+.card__icon--blue{
+    color: blue;
+}
+.card__icon--skyblue{
+    color: skyblue;
+}

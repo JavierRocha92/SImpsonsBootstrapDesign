@@ -1,0 +1,10 @@
+@media screen and (min-width:1200px) {
+    .card__icon{
+        top: 50%;
+    }
+    .card__visor{
+    background-position: -130px -80px;
+        
+
+    }
+}

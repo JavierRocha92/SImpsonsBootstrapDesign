@@ -1,12 +1,21 @@
 /* FOOTER */
 .footer {
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
     position: relative;
+    /* background-color: black !important; */
 }
 .footer__header{
     position: absolute;
-    top: -25px;
+    top: 90%;
+    background-color: #FC6AA8 !important;
+}
+.footer__icon{
+    transition: all 0.3s ease;
+}
+.footer__icon:hover{
+    color: #F7D756 !important;
+    transform: scale(1.1);
+}
+.footer__footer{
+    font-style: italic;
+    text-align: right;
 }

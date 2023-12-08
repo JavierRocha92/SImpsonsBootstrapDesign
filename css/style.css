@@ -1,6 +1,19 @@
+@font-face {
+    font-family: simpsons;
+    src: url(../assets/fonts/Simpsonfont\ DEMO.otf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/RobotoCondensed-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: monserrat;
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
 *{
     box-sizing: border-box;
     border-radius: 2px;
+    /* font-family: monserrat; */
 }
 html{
     scroll-behavior: smooth;
@@ -11,17 +24,13 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background-image: url(../assets/images/html__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 .container{
     width: 100%;
-    border: 1px solid red;
+    padding-bottom: 100px;
 }
-.main{
-    border: 2px solid black;
-    
-}
-.aside{
-    border: 2px solid black;
-
-}
-

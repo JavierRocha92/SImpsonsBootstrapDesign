@@ -1,4 +1,30 @@
 .navbar{
-    border: 1px solid blue;
-    width: 100%;
+    background-color: #F7D756 !important;
+}
+.navbar-brand{
+    width: 100px;
+}
+.nav-item{
+    width: 130px;
+    padding: 2px;
+}
+.nav-link{
+    font-family: simpsons !important;
+    color: white !important;
+    -webkit-text-stroke: 1px black;
+    width: 100% !important;
+    transition: all 0.3s ease;
+}
+.nav-link:hover{
+    color: red !important;
+}
+.nav_container__image{
+    width: 60px;
+
+}
+.nav_horizontal__icon{
+    width: 100%
+}
+.navbar__login{
+    width: 200px;
 }

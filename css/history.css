@@ -1,0 +1,36 @@
+.visor--history{
+    /* background: rgb(255,252,0);
+    background: linear-gradient(90deg, rgba(255,252,0,1) 0%, rgba(247,215,86,0.5047268907563025) 0%, rgba(247,215,86,0.5) 100%),
+    url(../assets/images/history/history__header.gif); */
+    background-image: url(../assets/images/history/history__header.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
+}
+.card__text{
+    font-family: monserrat !important;
+}
+.card__title{
+    font-family: roboto;
+}
+.card__header{
+    font-variant: small-caps;
+}
+.card__data{
+    font-family: monserrat;
+}
+.card__date{
+    font-size: 0.9rem !important;
+    color: gray;
+}
+.card__comment{
+    font-size: 0.9rem !important;
+
+}
+.card__image{
+    box-shadow: 1px 1px 10px gray;
+}
+.card__footer{
+    font-style: italic;
+    text-align: right;
+}
