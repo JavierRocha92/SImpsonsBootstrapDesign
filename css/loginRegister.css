@@ -1,0 +1,119 @@
+.container__form{
+    padding: 10px 50px;
+    gap: 30px;
+    height: 400px;
+}
+.yellow_box{
+    background-color: #F7D756;
+    height: 400px;
+    border-radius: 0% 20% 20% 0%;
+}
+.yellow_box__button{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.yellow_box__button:hover{
+    color: black !important;
+    border: 2px solid black;
+}
+.form__input{
+    border: 0;
+    border: 1px solid black; border-radius: 2px;
+    background-color: #ccc;
+}
+.form__button{
+    background-color: #F7D756;
+    border: 0;
+}
+.form__button:hover{
+    outline: 1px solid black;
+    color: black !important;
+}
+.yellow_box__container{
+    background-image: url(../assets/images/loginRegister/lisa_playing_saxo.png);
+    height: 200px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.form__icon{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40px !important;
+    transition: all 0.3s ease;
+}
+.form__icon--red{
+    color: red;
+}
+.form__icon--blue{
+    color: blue;
+}
+.form__icon--black{
+    color: black;
+}
+.form__icon--skyblue{
+    color: skyblue;
+}
+.form__icon:hover{
+    background-color: black;
+    color: white;
+}
+.goLeft{
+    animation-name: goLeft;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes goLeft {
+    from{
+        left: 50%;
+        border-radius: 20% 0% 0% 20%;
+    }
+    to{
+        border-radius: 0% 20% 20% 0%;
+        left: 0;
+    }
+}
+.goRight{
+    animation-name: goRight;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes goRight {
+    from{
+        left: 0;
+        border-radius: 0% 20% 20% 0%;
+    }
+    to{
+        left: 50%;
+        border-radius: 20% 0% 0% 20%;
+    }
+}
+.register-picture{
+    animation-name: register-picture;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes register-picture {
+    from{
+        background-image: url(../assets/images/loginRegister/lisa_playing_saxo.png);
+    }
+    to{
+        background-image: url(../assets/images/loginRegister/bart_skating.png);
+    }
+}
+.login-picture{
+    animation-name: login-picture;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes login-picture {
+    from{
+        background-image: url(../assets/images/loginRegister/bart_skating.png);
+    }
+    to{
+        background-image: url(../assets/images/loginRegister/lisa_playing_saxo.png);
+    }
+}
