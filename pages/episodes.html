@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- OTHERS CSS -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/episodes.css">
+    <link rel="stylesheet" href="../css/nav_horizontal.css">
+    <link rel="stylesheet" href="../css/nav_vertical.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- FONT-AWESOME REMOTE LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <header class="header d-none d-xl-flex">
+            <!-- header carrousel -->
+            <div id="carouselExampleSlidesOnly" class="carousel w-100 slider" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item h-100 active">
+                        <img src="../assets/images/slider/slider_01.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__02.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- menu responsive on nav horizaontal container -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-xl-none w-100">
+            <div class="container-fluid">
+                <!-- main logo for nav -->
+                <a class="navbar-brand p-0" href="#"><img class="nav_horizontal__icon"
+                        src="../assets/images/icons/home__icon.png" alt=""></a>
+                <!-- dropdown button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- nav icon dropdown -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Episodes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5" href="#">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#">Merch</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link fs-5" href="#">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar__login d-none d-lg-block">
+                <a class="nav-link d-flex justify-content-center vertical-align fs-5 pt-2" href="#">
+                    <p class="pt-2">Log in</p>
+                    <div class="nav_container__image">
+                        <img src="./assets/images/icons/user__icon.png" alt="" class="nav_horizontal__icon">
+                    </div>
+                </a>
+            </div>
+        </nav><!-- nav horizontal final -->
+        <!-- nav vertical begin -->
+        <nav class="nav_vertical p-0 d-none d-xl-block col-1">
+            <div class="d-flex align-items-start nav_vertical__icons w-100">
+                <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4" id="v-pills-home-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                        aria-controls="v-pills-home" aria-selected="false"><img class="nav_vertical__icon"
+                            src="../assets/images/icons/home__icon.png" alt=""></a>
+                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-profile-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false"><img
+                            src="../assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-disabled-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab"
+                        aria-controls="v-pills-disabled" aria-selected="false"><img
+                            src="../assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-messages-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+                        aria-controls="v-pills-messages" aria-selected="false"><img
+                            src="../assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-settings-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
+                        aria-controls="v-pills-settings" aria-selected="false"><img
+                            src="../assets/images/icons/merch__icon.png" alt="" class="nav_vertical__image"></a>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                        tabindex="0">
+                        home</div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">login</div>
+                    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                        aria-labelledby="v-pills-disabled-tab" tabindex="0">films</div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">messages</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab" tabindex="0">settings</div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main begin -->
+        <main class="main col-xl-11">
+            <section class="cards d-flex justify-content-center text-dark mt-5 row">
+                <!-- exterior card container who shot mr burns -->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__01.webp"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Who shot Mr.Burns?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Who shot Mr.Burns?
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container homer´s enemy-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__02.webp"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Homer´s enemy
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Homer´s enemy
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container you only move twice-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__03.jpg"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            You only move twice
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                You only move twice
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container Cape Feare-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__04.jpg"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Cape Feare
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Cape Feare
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container ThreeHouse of Horror V-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__05.webp"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            ThreeHouse of Horror V
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                ThreeHouse of Horror V
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container Marge vs Monorail-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__06.webp"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Marge vs Monorail
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Marge vs Monorail
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container Last exit to Springfield-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__07.webp"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Last exit to Springfield
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Last exit to Springfield
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container The city of New York vs Homer Simpson-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__08.avif"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            The city of New York vs Homer Simpson
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                The city of New York vs Homer Simpson
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>5
+                </article>
+                <!-- exterior card container The Springfields files-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__09.png"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            The Springfields files
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                The Springfields files
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+                <!-- exterior card container Homer the great-->
+                <article class="container_card p-3 col-12">
+                    <!-- card -->
+                    <div class="card mb-3 position-relative row d-flex flex-column flex-lg-row">
+                        <header class="card__visor p-lg-3 position-absolute col-10 offset-1 col-lg-7 offset-lg-0">
+                            <!-- card image -->
+                            <a href="#" class="card__link">
+                                <img class="card__image w-100 h-100" src="../assets/images/episodes/card__10.avif"
+                                    alt="">
+                            </a>
+                            <!-- card data -->
+                            <div class="card__data mt-lg-2 d-flex justify-content-between row">
+                                <!-- card date -->
+                                <div class="card__date d-flex flex-column col-5">
+                                    <p class="card__text">
+                                        <span class="card__day m-0 text-center p-0 fs-2 fw-bold">12</span>
+                                        <span class="card__month m-0 text-center p-0 fs-5">June</span>
+                                        <span class="card__year m-0 text-center p-0 fs-2 fw-bold">1993</span>
+
+                                    </p>
+                                </div>
+                                <!-- card ratings -->
+                                <div class="card__rating d-flex justify-content-around pt-2 col-5">
+                                    <i class="card__icon fs-4 fa-solid fa-eye"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-heart"></i>
+                                    <i class="card__icon fs-4 fa-regular fa-thumbs-up"></i>
+                                    <i class="card__icon fs-4 fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- card main -->
+                        <main class="card__main d-flex flex-column col-lg-5 offset-lg-7 mt-lg-0">
+                            <!-- card accordion -->
+                            <div class="accordion d-lg-none" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fs-1 text-dark" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Homer the great
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr.
+                                            Burns plans to block sunlight from Springfield using a massive device. He
+                                            alienates several residents, including his loyal employee Smithers and the
+                                            mischievous youngster Bart Simpson. After a series of conflicts, Burns is
+                                            found shot in the nuclear plant's parking lot. The mystery of who shot Burns
+                                            becomes a town-wide enigma, sparking speculation and theories among
+                                            Springfield's inhabitants. This cliffhanger persisted until its resolution
+                                            in a subsequent episode, keeping the audience guessing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card title -->
+                            <h2 class="card__title d-none pb-lg-2 d-lg-flex">
+                                Homer the great
+                            </h2>
+                            <!-- card description -->
+                            <p class="card__text d-none d-lg-flex text-lg-xl">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                                including his loyal employee Smithers and the mischievous youngster Bart Simpson. After
+                                a series of conflicts, Burns is found shot in the nuclear plant's parking lot. The
+                                mystery of who shot Burns becomes a town-wide enigma, sparking speculation and theories
+                                among Springfield's inhabitants. This cliffhanger persisted until its resolution in a
+                                subsequent episode, keeping the audience guessing.
+                            </p>
+                            <p class="d-none card__text--episodes_1024">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using a massive device. He alienates several residents,
+                            </p>
+                            <p class="d-none card__text--episodes_1260">
+                                In the "Who Shot Mr. Burns?" episode of The Simpsons, the nefarious Mr. Burns plans to
+                                block sunlight from Springfield using 
+                            </p>
+                        </main>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- footer begin -->
+        <footer class="footer row mb-5 p-5 col-xl-11 bg-dark offset-xl-1 d-flex justify-content-center">
+            <div class="footer__header p-4 col-8 row text-light text-center d-flex justify-content-center">
+                <h2 class="footer__title col-12 p-2">
+                    Subscribe to newsletter
+                </h2>
+                <form action="mailto:simpsons@outlook.com" method="post"
+                    class="footer__form d-flex justify-content-between p-2 bg-light col-lg-8">
+                    <input type="text" class="footer__input border-0" placeholder="Enter your emial">
+                    <button class="form__button border-0 bg-primary p-2 text-light">Subscribe</button>
+                </form>
+            </div>
+            <div class="col-6 col-lg-4 d-flex justify-content-center row">
+                <div class="footer__container_image col-10">
+                    <img class="footer__image" src="../assets/images/footer/The_Simpsons_yellow_logo.svg" alt="">
+                </div>
+                <div class="social_media d-flex justify-content-around">
+                    <i class="fa-brands text-light fs-3 footer__icon fa-youtube"></i>
+                    <i class="fa-brands text-light fs-3 footer__icon fa-vimeo"></i>
+                    <i class="fa-brands text-light fs-3 footer__icon fa-facebook"></i>
+                    <i class="fa-brands text-light fs-3 footer__icon fa-twitter"></i>
+                </div>
+            </div>
+
+            <!-- footer list -->
+            <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                <li class="list-group-item bg-dark text-light">An item</li>
+                <li class="list-group-item bg-dark text-light">A second item</li>
+                <li class="list-group-item bg-dark text-light">A third item</li>
+                <li class="list-group-item bg-dark text-light">A fourth item</li>
+            </ul>
+
+            <!-- footer list -->
+            <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                <li class="list-group-item bg-dark text-light">An item</li>
+                <li class="list-group-item bg-dark text-light">A second item</li>
+                <li class="list-group-item bg-dark text-light">A third item</li>
+                <li class="list-group-item bg-dark text-light">A fourth item</li>
+            </ul>
+            <footer class="footer__footer text-light mt-3 border-top border-bottom">
+                The simpsons company &#169; 2023
+            </footer>
+        </footer>
+    </div>
+    <!-- BOOTSTRAP JS FILE -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- OTHER JS FILES -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

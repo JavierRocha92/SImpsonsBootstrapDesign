@@ -1,0 +1,29 @@
+.card{
+}
+.card__visor{
+    top: -40px;
+}
+.card__icon,.card__day,.card__year{
+    color: gray;
+    padding: 0 !important;
+}
+.card__icon{
+    transition: all 0.3s ease;
+}
+.card__icon:hover{
+    color: #F7D756;
+    transform: scale(1.2);
+}
+.card__main{
+    margin-top: 45%;
+}
+.accordion-button{
+    background-color: #F7D756 !important;
+}
+.accordion-button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.card__title{
+    border-bottom: 2px solid black;
+}
