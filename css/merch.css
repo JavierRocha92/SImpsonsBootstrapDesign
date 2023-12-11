@@ -34,6 +34,20 @@
     left: 150px;
     font-size: 0.7rem;
 }
+.card__icon--hearth{
+    transition: all 0.3s ease;
+    top: 20px;
+    left: 80%;
+    color: red;
+}
+.card__icon--cart{
+    transition: all 0.3s ease;
+    top: 60px;
+    left: 79%;
+}
+.card__icon--hearth:hover,.card__icon--cart:hover{
+    transform: scale(1.2);
+}
 .star{
     color: #F7D756;
 }

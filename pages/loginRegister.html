@@ -136,9 +136,9 @@
                 <!-- yellow layer to hide form -->
 
                 <div id="hiding_layer" class="yellow_box position-absolute col-6">
-                    <div id="yellow_box__container"
-                        class="d-flex flex-column align-items-center yellow_box__content text-center d-flex align-items-center justify-content-center">
-                        <div id="yellow_container__image" class="yellow_box__container col-8 offset-2">
+                    <div id="yellow_box__containerr"
+                        class="row d-flex flex-column align-items-center yellow_box__content text-center justify-content-center">
+                        <div id="yellow_container__image" class="yellow_box__container col-8 offset-2 p-0 m-0">
 
                         </div>
                         <h2 class="yellow_box__title" id="yellow_box__title">
@@ -147,8 +147,8 @@
                         <h3 id="yellow_box__subtitle" class="yellow_box__subtitle fs-5 text-dark">
                             Create an account now and get the experience
                         </h3>
-                        <button id="signup__button" class="yellow_box__button text-light p-2 ps-4 pe-4">Sign up</button>
-                        <button id="login__button" class="yellow_box__button text-light p-2 ps-4 pe-4 d-none">Log
+                        <button id="signup__button" class="yellow_box__button col-6  text-light p-2 ps-4 pe-4">Sign up</button>
+                        <button id="login__button" class="yellow_box__button col-6  text-light p-2 ps-4 pe-4 d-none">Log
                             in</button>
                     </div>
                 </div><!-- final yellow layer -->
@@ -188,16 +188,16 @@
                         <!-- form to enter your data -->
                         <form action="mailto:javierrg1992@gamil.com" method="post"
                             class="d-flex flex-column justify-content-center form form--login">
-                            <input type="email" name="email" class="form__input p-1 mb-2" placeholder="Type email">
-                            <input type="password" name="password" class="form__input p-1 mb-2"
+                            <input required type="email" name="email" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input required type="password" name="password" class="form__input p-1 mb-2"
                                 placeholder="Type your password">
-                            <input type="password" name="rep_password" class="form__input p-1 mb-2"
+                            <input required type="password" name="rep_password" class="form__input p-1 mb-2"
                                 placeholder="Type your password again">
                             <div class="d-flex justify-content-center checkbox">
-                                <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
+                                <input type="checkbox" name="terms" class="form__input me-2 form__input--checkbox">
                                 <label class="form__label" for="terms">Accept terms about private policy</label>
                             </div>
-                            <button class="form__input mb-2 p-2 text-light form__button" type="submit">Sign up</button>
+                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Sign up</button>
                         </form>
                     </div>
                 </div>
@@ -238,14 +238,14 @@
                         <!-- form to enter your data -->
                         <form action="mailto:javierrg1992@gamil.com" method="post"
                             class="d-flex flex-column justify-content-center form form--login">
-                            <input type="email" name="user" class="form__input p-1 mb-2" placeholder="Type email">
-                            <input type="password" name="password" class="form__input p-1 mb-2"
+                            <input required type="email" name="user" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input required type="password" name="password" class="form__input p-1 mb-2"
                                 placeholder="Type your password">
                             <div class="d-flex justify-content-center checkbox">
-                                <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
+                                <input type="checkbox" name="terms" class="form__input me-2 form__input--checkbox">
                                 <label class="form__label" for="terms">Remember me</label>
                             </div>
-                            <button class="form__input mb-2 p-2 text-light form__button" type="submit">Log in</button>
+                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Log in</button>
                         </form>
                         <!-- footer div for change form and password link support-->
                         <div class="form__change">

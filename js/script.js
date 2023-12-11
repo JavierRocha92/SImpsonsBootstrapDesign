@@ -24,7 +24,7 @@ signup__button.addEventListener('click',() => {
     yellow_container__image.classList.remove('login-picture')
     yellow_container__image.classList.add('register-picture')
     yellow_box__title.textContent = 'Wellcome Back'
-    yellow_box__subtitle.textContent = 'Please log in to get into your profile'
+    yellow_box__subtitle.textContent = 'Please log in to get into your webpage profile'
     signup__button.classList.add('d-none')
     login__button.classList.remove('d-none')
 })
