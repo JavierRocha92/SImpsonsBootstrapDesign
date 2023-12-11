@@ -1,7 +1,9 @@
 /* FOOTER */
-.footer {
+.footer__separator{
+    background-color: #F7D756;
+}
+.container__footer {
     position: relative;
-    /* background-color: black !important; */
 }
 .footer__header{
     position: absolute;

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- OTHERS CSS -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/merch.css">
+    <link rel="stylesheet" href="../css/nav_horizontal.css">
+    <link rel="stylesheet" href="../css/nav_vertical.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- FONT-AWESOME REMOTE LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid row">
+        <header class="header d-none d-xl-flex">
+            <!-- header carrousel -->
+            <div id="carouselExampleSlidesOnly" class="carousel w-100 slider" data-bs-ride="carousel">
+                <!-- container images -->
+                <div class="carousel-inner">
+                    <!-- image 1 -->
+                    <div class="carousel-item h-100 active">
+                        <img src="../assets/images/slider/slider_01.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 2 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__02.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 3 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 4 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__04.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 5 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__05.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div><!-- final slider -->
+        </header><!-- final header -->
+        <!-- menu responsive on nav horizaontal container -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary d-xl-none w-100">
+            <div class="container-fluid">
+                <!-- main logo for nav -->
+                <a class="navbar-brand p-0" href="../index.html"><img class="nav_horizontal__icon"
+                        src="../assets/images/icons/home__icon.png" alt=""></a>
+                <!-- dropdown button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- nav icon dropdown -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- nav list menu -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- button login -->
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link fs-5" href="./loginRegister.html">Log in</a>
+                        </li>
+                        <!-- button episodes -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./episodes.html">Episodes</a>
+                        </li>
+                        <!-- button history -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5" href="./history.html">History</a>
+                        </li>
+                        <!-- button merchandaising -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./merch.html">Merch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- container login lg resolution -->
+            <div class="navbar__login d-none d-lg-block">
+                <!-- link login container -->
+                <a class="nav-link d-flex justify-content-center vertical-align fs-5 pt-2" href="./loginRegister.html">
+                    <p class="pt-2">Log in</p>
+                    <!-- user avatar (homer face) -->
+                    <div class="nav_container__image">
+                        <img src="../assets/images/icons/user__icon.png" alt="" class="nav_horizontal__icon">
+                    </div>
+                </a>
+            </div>
+        </nav><!-- nav horizontal final -->
+        <!-- nav vertical begin -->
+        <nav class="nav_vertical p-0 d-none d-xl-block col-1">
+            <div class="d-flex align-items-start nav_vertical__icons w-100">
+                <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <!-- button home -->
+                    <a href="../index.html" title="Home" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4">
+                        <img class="nav_vertical__icon" src="../assets/images/icons/home__icon.png" alt=""></a>
+                    <!-- button log in -->
+                    <a href="./loginRegister.html" title="Log in"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button episodes -->
+                    <a href="./episodes.html" title="Episodes" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button history -->
+                    <a href="./history.html" title="History" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button merchandaising -->
+                    <a href="./merch.html" title="Merchandaising"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/merch__icon.png" alt="" class="nav_vertical__image"></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main begin -->
+        <main class="main col-xl-11">
+            <!-- section for cards -->
+            <section class="cards d-flex flex-wrap justify-content-center">
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+                <!-- exterior card container 1 -->
+                <article class="card-container p-4">
+                    <div class="card d-flex flex-column justify-content-center align-items-center">
+                        <!-- middle top card -->
+                        <header class="card__header p-2 d-flex flex-column row position-relative">
+                            <!-- brand image -->
+                            <img src="../assets/images/icons/home__icon.png" alt="" class="card__header_image col-4">
+                            <!-- card title -->
+                            <h2 class="card__title col-8">
+                                T-shirt
+                            </h2>
+                            <p class="card__subtitle col-6">
+                                Bart t-shirt design don´t have a cow man
+                            </p>
+                            <img src="../assets/images/merch/card__01.png" alt=""
+                                class="card__product position-absolute">
+                        </header>
+                        <!-- middle bottom card -->
+                        <main class="card__main position-relative p-2">
+                            <!-- card title bottom -->
+                            <h2 class=" card__title card__title--bottom fs-2 mt-1 mb-0">
+                                T-shirt
+                                <span class="card__tag p-1 text-light position-absolute">NEW</span>
+                            </h2>
+                            <!-- product description -->
+                            <p class="card__description p-0 m-0">
+                                T-shirt bart design
+                            </p>
+                            <!-- rating container -->
+                            <div class="card__rating">
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star"></i>
+                                <i class="fa-solid star fa-star-half-stroke"></i>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__size p-0 m-0">
+                                Size
+                            </p>
+                            <!-- list sizes -->
+                            <ul class="list p-0 m-0 d-flex list-unstyled">
+                                <li class="list__item fw-bold text-center ms-2 p-2">XS</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">S</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">M</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">L</li>
+                                <li class="list__item fw-bold text-center ms-2 p-2">XL</li>
+                            </ul>
+                        </main><!-- card main final -->
+                        <!-- card footer -->
+                        <footer class="card__footer p-2 d-flex justify-content-between position-relative">
+                            <!-- container colors -->
+                            <div class="colors">
+                                <!-- title color -->
+                                <h3 class="colors__title fs-5">
+                                    Colour
+                                </h3>
+                                <!-- container for any color -->
+                                <div class="container__colors d-flex justify-content-between">
+                                    <div class="color rounded-circle color--blue"></div>
+                                    <div class="color rounded-circle color--red"></div>
+                                    <div class="color rounded-circle color--black"></div>
+                                </div>
+                            </div>
+                            <!-- card price -->
+                            <p class="card__price position-absolute text-light p-1 fs-4">
+                                USD <span class="card__price--number fw-bold fs-3">22.75</span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!-- footer begin -->
+        <footer class="row">
+            <!-- separator footer for vertical menu -->
+            <div class="footer__separator col-xl-1">
+
+            </div>
+            <!-- footer container -->
+            <div class="container__footer footer row m-0 mb-5 p-5 col-xl-11 bg-dark d-flex justify-content-center">
+                <div class="footer__header p-4 col-8 row text-light text-center d-flex justify-content-center">
+                    <h2 class="footer__title col-12 p-2">
+                        Subscribe to newsletter
+                    </h2>
+                    <form action="mailto:simpsons@outlook.com" method="post"
+                        class="footer__form d-flex justify-content-between p-2 bg-light col-lg-8">
+                        <input type="text" class="footer__input border-0" placeholder="Enter your emial">
+                        <button class="form__button border-0 bg-primary p-2 text-light">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-6 col-lg-4 d-flex justify-content-center row">
+                    <div class="footer__container_image col-10">
+                        <img class="footer__image" src="../assets/images/footer/The_Simpsons_yellow_logo.svg" alt="">
+                    </div>
+                    <div class="social_media d-flex justify-content-around">
+                        <i class="fa-brands text-light fs-3 footer__icon fa-youtube"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-vimeo"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-facebook"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-twitter"></i>
+                    </div>
+                </div>
+
+                <!-- footer list -->
+                <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                    <li class="list-group-item bg-dark text-light">An item</li>
+                    <li class="list-group-item bg-dark text-light">A second item</li>
+                    <li class="list-group-item bg-dark text-light">A third item</li>
+                    <li class="list-group-item bg-dark text-light">A fourth item</li>
+                </ul>
+
+                <!-- footer list -->
+                <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                    <li class="list-group-item bg-dark text-light">An item</li>
+                    <li class="list-group-item bg-dark text-light">A second item</li>
+                    <li class="list-group-item bg-dark text-light">A third item</li>
+                    <li class="list-group-item bg-dark text-light">A fourth item</li>
+                </ul>
+                <footer class="footer__footer text-light mt-3 border-top border-bottom">
+                    The simpsons company &#169; 2023
+                </footer>
+            </div>
+        </footer>
+    </div>
+    <!-- BOOTSTRAP JS FILE -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- OTHER JS FILES -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

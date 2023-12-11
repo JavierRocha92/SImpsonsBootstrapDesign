@@ -27,29 +27,39 @@
         <header class="header d-none d-xl-flex">
             <!-- header carrousel -->
             <div id="carouselExampleSlidesOnly" class="carousel w-100 slider" data-bs-ride="carousel">
+                <!-- container images -->
                 <div class="carousel-inner">
+                    <!-- image 1 -->
                     <div class="carousel-item h-100 active">
                         <img src="../assets/images/slider/slider_01.jpg" class="slider__image d-block w-100" alt="...">
                     </div>
+                    <!-- image 2 -->
                     <div class="carousel-item h-100">
                         <img src="../assets/images/slider/slider__02.jpg" class="slider__image d-block w-100" alt="...">
                     </div>
+                    <!-- image 3 -->
                     <div class="carousel-item h-100">
-                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100"
-                        alt="...">
+                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 4 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__04.jpg" class="slider__image d-block w-100" alt="...">
+                    </div>
+                    <!-- image 5 -->
+                    <div class="carousel-item h-100">
+                        <img src="../assets/images/slider/slider__05.jpg" class="slider__image d-block w-100" alt="...">
                     </div>
                 </div>
-            </div>
-            
-        </header>
+            </div><!-- final slider -->
+        </header><!-- final header -->
         <!-- menu responsive on nav horizaontal container -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-xl-none w-100">
             <div class="container-fluid">
                 <!-- main logo for nav -->
-                <a class="navbar-brand p-0" href="#"><img class="nav_horizontal__icon"
-                    src="../assets/images/icons/home__icon.png" alt=""></a>
-                    <!-- dropdown button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand p-0" href="../index.html"><img class="nav_horizontal__icon"
+                        src="../assets/images/icons/home__icon.png" alt=""></a>
+                <!-- dropdown button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <!-- nav icon dropdown -->
@@ -57,27 +67,35 @@
                 </button>
                 <!-- menu -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- nav list menu -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5" href="#">Episodes</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fs-5" href="#">History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5" href="#">Merch</a>
-                        </li>
+                        <!-- button login -->
                         <li class="nav-item d-lg-none">
-                            <a class="nav-link fs-5" href="#">Log in</a>
+                            <a class="nav-link fs-5" href="./loginRegister.html">Log in</a>
+                        </li>
+                        <!-- button episodes -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./episodes.html">Episodes</a>
+                        </li>
+                        <!-- button history -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5" href="./history.html">History</a>
+                        </li>
+                        <!-- button merchandaising -->
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./merch.html">Merch</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <!-- container login lg resolution -->
             <div class="navbar__login d-none d-lg-block">
-                <a class="nav-link d-flex justify-content-center vertical-align fs-5 pt-2" href="#">
+                <!-- link login container -->
+                <a class="nav-link d-flex justify-content-center vertical-align fs-5 pt-2" href="./loginRegister.html">
                     <p class="pt-2">Log in</p>
+                    <!-- user avatar (homer face) -->
                     <div class="nav_container__image">
-                        <img src="./assets/images/icons/user__icon.png" alt="" class="nav_horizontal__icon">
+                        <img src="../assets/images/icons/user__icon.png" alt="" class="nav_horizontal__icon">
                     </div>
                 </a>
             </div>
@@ -86,68 +104,58 @@
         <nav class="nav_vertical p-0 d-none d-xl-block col-1">
             <div class="d-flex align-items-start nav_vertical__icons w-100">
                 <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4" id="v-pills-home-tab"
-                    data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                        aria-controls="v-pills-home" aria-selected="false"><img class="nav_vertical__icon"
-                        src="../assets/images/icons/home__icon.png" alt=""></a>
-                        <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-profile-tab"
-                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
-                        aria-controls="v-pills-profile" aria-selected="false"><img
-                        src="../assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
-                        <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-disabled-tab"
-                        data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab"
-                        aria-controls="v-pills-disabled" aria-selected="false"><img
-                        src="../assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
-                        <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-messages-tab"
-                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false"><img
-                        src="../assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
-                        <a href="#" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4" id="v-pills-settings-tab"
-                        data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
-                        aria-controls="v-pills-settings" aria-selected="false"><img
-                        src="../assets/images/icons/merch__icon.png" alt="" class="nav_vertical__image"></a>
-                    </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-                        tabindex="0">
-                        home</div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab" tabindex="0">login</div>
-                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
-                        aria-labelledby="v-pills-disabled-tab" tabindex="0">films</div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab" tabindex="0">messages</div>
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab" tabindex="0">settings</div>
-                    </div>
+                    <!-- button home -->
+                    <a href="../index.html" title="Home" 
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4">
+                        <img class="nav_vertical__icon" src="../assets/images/icons/home__icon.png" alt=""></a>
+                    <!-- button log in -->
+                    <a href="./loginRegister.html" title="Log in"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button episodes -->
+                    <a href="./episodes.html" title="Episodes"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button history -->
+                    <a href="./history.html" title="History"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
+                    <!-- button merchandaising -->
+                    <a href="./merch.html" title="Merchandaising"
+                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                        <img src="../assets/images/icons/merch__icon.png" alt="" class="nav_vertical__image"></a>
                 </div>
-            </nav>
-            
-            <!-- main begin -->
-            <main class="main col-xl-11">
-                <!-- container for two form -->
-                <div class="container_forms bg-light position-relative mt-5 mb-5 row col-xl-8 offset-xl-2 " id="container__forms">
-                    <!-- yellow layer to hide form -->
-                    
-                    <div id="hiding_layer" class="yellow_box position-absolute col-6">
-                        <div id="yellow_box__container" class="d-flex flex-column align-items-center yellow_box__content text-center d-flex align-items-center justify-content-center">
-                            <div id="yellow_container__image" class="yellow_box__container col-8 offset-2">
-                                
-                            </div>
-                            <h2 class="yellow_box__title" id="yellow_box__title">
-                                Wellcome. friend
-                            </h2>
-                            <h3 id="yellow_box__subtitle" class="yellow_box__subtitle fs-5 text-dark">
-                                Create an account now and get the experience
-                            </h3>
-                            <button id="signup__button" class="yellow_box__button text-light p-2 ps-4 pe-4">Sign up</button>
-                            <button id="login__button" class="yellow_box__button text-light p-2 ps-4 pe-4 d-none">Log in</button>
+            </div>
+        </nav>
+
+        <!-- main begin -->
+        <main class="main col-xl-11">
+            <!-- container for two form -->
+            <div class="container_forms bg-light position-relative mt-5 mb-5 row col-xl-8 offset-xl-2 "
+                id="container__forms">
+                <!-- yellow layer to hide form -->
+
+                <div id="hiding_layer" class="yellow_box position-absolute col-6">
+                    <div id="yellow_box__container"
+                        class="d-flex flex-column align-items-center yellow_box__content text-center d-flex align-items-center justify-content-center">
+                        <div id="yellow_container__image" class="yellow_box__container col-8 offset-2">
+
                         </div>
-                    </div><!-- final yellow layer -->
-                    <!-- container form ext -->
-                    <div class="container__form_ext col-6">
-                        <!-- container for sign up form -->
-                        <div class="container__form d-flex flex-column justisy-content-center container__form--signup"
+                        <h2 class="yellow_box__title" id="yellow_box__title">
+                            Wellcome. friend
+                        </h2>
+                        <h3 id="yellow_box__subtitle" class="yellow_box__subtitle fs-5 text-dark">
+                            Create an account now and get the experience
+                        </h3>
+                        <button id="signup__button" class="yellow_box__button text-light p-2 ps-4 pe-4">Sign up</button>
+                        <button id="login__button" class="yellow_box__button text-light p-2 ps-4 pe-4 d-none">Log
+                            in</button>
+                    </div>
+                </div><!-- final yellow layer -->
+                <!-- container form ext -->
+                <div class="container__form_ext col-6">
+                    <!-- container for sign up form -->
+                    <div class="container__form d-flex flex-column justisy-content-center container__form--signup"
                         id="signup">
                         <!-- form title -->
                         <div class="form__title_container p-1 text-center ">
@@ -179,65 +187,65 @@
                         </div>
                         <!-- form to enter your data -->
                         <form action="mailto:javierrg1992@gamil.com" method="post"
-                        class="d-flex flex-column justify-content-center form form--login">
-                        <input type="email" name="email" class="form__input p-1 mb-2" placeholder="Type email">
-                        <input type="password" name="password" class="form__input p-1 mb-2"
-                        placeholder="Type your password">
-                        <input type="password" name="rep_password" class="form__input p-1 mb-2"
-                        placeholder="Type your password again">
-                        <div class="d-flex justify-content-center checkbox">
-                            <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
-                            <label class="form__label" for="terms">Accept terms about private policy</label>
+                            class="d-flex flex-column justify-content-center form form--login">
+                            <input type="email" name="email" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input type="password" name="password" class="form__input p-1 mb-2"
+                                placeholder="Type your password">
+                            <input type="password" name="rep_password" class="form__input p-1 mb-2"
+                                placeholder="Type your password again">
+                            <div class="d-flex justify-content-center checkbox">
+                                <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
+                                <label class="form__label" for="terms">Accept terms about private policy</label>
+                            </div>
+                            <button class="form__input mb-2 p-2 text-light form__button" type="submit">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- container fomr ext -->
+                <div class="container__form_ext col-6">
+                    <!-- container for log in form -->
+                    <div class="d-flex flex-column justisy-content-center container__form container__form--login"
+                        id="login">
+                        <!-- form title -->
+                        <div class="form__title_container p-1 text-center">
+                            <h2 class="form__title">Type your account
+                            </h2>
                         </div>
-                        <button class="form__input mb-2 p-2 text-light form__button" type="submit">Sign up</button>
-                    </form>
-                </div>
-            </div>
-            <!-- container fomr ext -->
-            <div class="container__form_ext col-6">
-                <!-- container for log in form -->
-                <div class="d-flex flex-column justisy-content-center container__form container__form--login"
-                id="login">
-                <!-- form title -->
-                <div class="form__title_container p-1 text-center">
-                    <h2 class="form__title">Type your account
-                    </h2>
-                </div>
-                <!-- contianer for accounts google and facebook -->
-                <div class="d-flex align-items-center mt-2 justify-content-evenly fs-4 form__others_account">
-                    <div class="form__others_container d-flex justify-content-center">
-                        <a class="form__icon form__icon--red w-100 text-center" href="" target="_blank">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
-                    </div>
-                    <div class="form__others_container d-flex justify-content-center">
-                        <a class="form__icon form__icon--blue w-100 text-center" href="" target="_blank">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    <div class="form__others_container d-flex justify-content-center">
-                        <a class="form__icon form__icon--skyblue w-100 text-center" href="" target="_blank">
-                            <i class="fa-brands fa-windows"></i>
-                        </a>
-                    </div>
-                    <div class="form__others_container d-flex justify-content-center">
-                        <a class="form__icon form__icon--black w-100 text-center" href="" target="_blank">
-                            <i class="fa-brands fa-apple"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- form to enter your data -->
-                <form action="mailto:javierrg1992@gamil.com" method="post"
-                class="d-flex flex-column justify-content-center form form--login">
-                <input type="email" name="user" class="form__input p-1 mb-2" placeholder="Type email">
-                <input type="password" name="password" class="form__input p-1 mb-2"
-                placeholder="Type your password">
-                <div class="d-flex justify-content-center checkbox">
-                    <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
-                    <label class="form__label" for="terms">Remember me</label>
-                </div>
-                <button class="form__input mb-2 p-2 text-light form__button" type="submit">Log in</button>
+                        <!-- contianer for accounts google and facebook -->
+                        <div class="d-flex align-items-center mt-2 justify-content-evenly fs-4 form__others_account">
+                            <div class="form__others_container d-flex justify-content-center">
+                                <a class="form__icon form__icon--red w-100 text-center" href="" target="_blank">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            </div>
+                            <div class="form__others_container d-flex justify-content-center">
+                                <a class="form__icon form__icon--blue w-100 text-center" href="" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="form__others_container d-flex justify-content-center">
+                                <a class="form__icon form__icon--skyblue w-100 text-center" href="" target="_blank">
+                                    <i class="fa-brands fa-windows"></i>
+                                </a>
+                            </div>
+                            <div class="form__others_container d-flex justify-content-center">
+                                <a class="form__icon form__icon--black w-100 text-center" href="" target="_blank">
+                                    <i class="fa-brands fa-apple"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- form to enter your data -->
+                        <form action="mailto:javierrg1992@gamil.com" method="post"
+                            class="d-flex flex-column justify-content-center form form--login">
+                            <input type="email" name="user" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input type="password" name="password" class="form__input p-1 mb-2"
+                                placeholder="Type your password">
+                            <div class="d-flex justify-content-center checkbox">
+                                <input type="checkbox" name="terms" class="form__input mb-2 form__input--checkbox">
+                                <label class="form__label" for="terms">Remember me</label>
+                            </div>
+                            <button class="form__input mb-2 p-2 text-light form__button" type="submit">Log in</button>
                         </form>
                         <!-- footer div for change form and password link support-->
                         <div class="form__change">
@@ -249,47 +257,54 @@
             </div>
         </main>
         <!-- footer begin -->
-        <footer class="footer row mb-5 p-5 col-xl-11 bg-dark offset-xl-1 d-flex justify-content-center">
-            <div class="footer__header p-4 col-8 row text-light text-center d-flex justify-content-center">
-                <h2 class="footer__title col-12 p-2">
-                    Subscribe to newsletter
-                </h2>
-                <form action="mailto:simpsons@outlook.com" method="post"
-                    class="footer__form d-flex justify-content-between p-2 bg-light col-lg-8">
-                    <input type="text" class="footer__input border-0" placeholder="Enter your emial">
-                    <button class="form__button border-0 bg-primary p-2 text-light">Subscribe</button>
-                </form>
-            </div>
-            <div class="col-6 col-lg-4 d-flex justify-content-center row">
-                <div class="footer__container_image col-10">
-                    <img class="footer__image" src="../assets/images/footer/The_Simpsons_yellow_logo.svg" alt="">
-                </div>
-                <div class="social_media d-flex justify-content-around">
-                    <i class="fa-brands text-light fs-3 footer__icon fa-youtube"></i>
-                    <i class="fa-brands text-light fs-3 footer__icon fa-vimeo"></i>
-                    <i class="fa-brands text-light fs-3 footer__icon fa-facebook"></i>
-                    <i class="fa-brands text-light fs-3 footer__icon fa-twitter"></i>
-                </div>
-            </div>
+        <footer class="row">
+            <!-- separator footer for vertical menu -->
+            <div class="footer__separator col-xl-1">
 
-            <!-- footer list -->
-            <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
-                <li class="list-group-item bg-dark text-light">An item</li>
-                <li class="list-group-item bg-dark text-light">A second item</li>
-                <li class="list-group-item bg-dark text-light">A third item</li>
-                <li class="list-group-item bg-dark text-light">A fourth item</li>
-            </ul>
+            </div>
+            <!-- footer container -->
+            <div class="container__footer footer row m-0 mb-5 p-5 col-xl-11 bg-dark d-flex justify-content-center">
+                <div class="footer__header p-4 col-8 row text-light text-center d-flex justify-content-center">
+                    <h2 class="footer__title col-12 p-2">
+                        Subscribe to newsletter
+                    </h2>
+                    <form action="mailto:simpsons@outlook.com" method="post"
+                        class="footer__form d-flex justify-content-between p-2 bg-light col-lg-8">
+                        <input type="text" class="footer__input border-0" placeholder="Enter your emial">
+                        <button class="form__button border-0 bg-primary p-2 text-light">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-6 col-lg-4 d-flex justify-content-center row">
+                    <div class="footer__container_image col-10">
+                        <img class="footer__image" src="../assets/images/footer/The_Simpsons_yellow_logo.svg" alt="">
+                    </div>
+                    <div class="social_media d-flex justify-content-around">
+                        <i class="fa-brands text-light fs-3 footer__icon fa-youtube"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-vimeo"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-facebook"></i>
+                        <i class="fa-brands text-light fs-3 footer__icon fa-twitter"></i>
+                    </div>
+                </div>
 
-            <!-- footer list -->
-            <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
-                <li class="list-group-item bg-dark text-light">An item</li>
-                <li class="list-group-item bg-dark text-light">A second item</li>
-                <li class="list-group-item bg-dark text-light">A third item</li>
-                <li class="list-group-item bg-dark text-light">A fourth item</li>
-            </ul>
-            <footer class="footer__footer text-light mt-3 border-top border-bottom">
-                The simpsons company &#169; 2023
-            </footer>
+                <!-- footer list -->
+                <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                    <li class="list-group-item bg-dark text-light">An item</li>
+                    <li class="list-group-item bg-dark text-light">A second item</li>
+                    <li class="list-group-item bg-dark text-light">A third item</li>
+                    <li class="list-group-item bg-dark text-light">A fourth item</li>
+                </ul>
+
+                <!-- footer list -->
+                <ul class="list-group list-group-flush col-6 col-lg-4 p-1">
+                    <li class="list-group-item bg-dark text-light">An item</li>
+                    <li class="list-group-item bg-dark text-light">A second item</li>
+                    <li class="list-group-item bg-dark text-light">A third item</li>
+                    <li class="list-group-item bg-dark text-light">A fourth item</li>
+                </ul>
+                <footer class="footer__footer text-light mt-3 border-top border-bottom">
+                    The simpsons company &#169; 2023
+                </footer>
+            </div>
         </footer>
     </div>
     <!-- BOOTSTRAP JS FILE -->
