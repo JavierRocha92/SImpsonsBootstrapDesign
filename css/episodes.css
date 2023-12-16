@@ -1,4 +1,6 @@
-.card{
+.title{
+    font-variant: small-caps;
+    border-bottom: 1px solid black;
 }
 .card__visor{
     top: -40px;

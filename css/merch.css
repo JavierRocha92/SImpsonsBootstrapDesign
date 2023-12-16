@@ -21,9 +21,18 @@
     right: 0px;
     top: 20px;
     padding: 0;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.card__product:hover{
+    transform: scale(3);
 }
 .card__main{
     width: 100%;
+}
+.title{
+    font-variant: small-caps;
+    border-bottom: 1px solid black;
 }
 .card__title{
     font-variant: small-caps;

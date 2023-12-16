@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/loginRegister.css">
     <link rel="stylesheet" href="../css/nav_horizontal.css">
     <link rel="stylesheet" href="../css/nav_vertical.css">
-    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- FONT-AWESOME REMOTE LIBRARY -->
@@ -24,7 +24,7 @@
 
 <body>
     <div class="container-fluid row">
-        <header class="header d-none d-xl-flex">
+        <header class="header p-0 d-none d-xl-flex">
             <!-- header carrousel -->
             <div id="carouselExampleSlidesOnly" class="carousel w-100 slider" data-bs-ride="carousel">
                 <!-- container images -->
@@ -39,7 +39,8 @@
                     </div>
                     <!-- image 3 -->
                     <div class="carousel-item h-100">
-                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100" alt="...">
+                        <img src="../assets/images/slider/slider__03.webp" class="slider__image d-block w-100"
+                            alt="...">
                     </div>
                     <!-- image 4 -->
                     <div class="carousel-item h-100">
@@ -105,20 +106,17 @@
             <div class="d-flex align-items-start nav_vertical__icons w-100">
                 <div class="nav flex-column nav-pills pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <!-- button home -->
-                    <a href="../index.html" title="Home" 
-                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4">
+                    <a href="../index.html" title="Home" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4 ms-4">
                         <img class="nav_vertical__icon" src="../assets/images/icons/home__icon.png" alt=""></a>
                     <!-- button log in -->
                     <a href="./loginRegister.html" title="Log in"
                         class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
                         <img src="../assets/images/icons/user__icon.png" alt="" class="nav_vertical__icon"></a>
                     <!-- button episodes -->
-                    <a href="./episodes.html" title="Episodes"
-                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                    <a href="./episodes.html" title="Episodes" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
                         <img src="../assets/images/icons/episodes__icon.png" alt="" class="nav_vertical__icon"></a>
                     <!-- button history -->
-                    <a href="./history.html" title="History"
-                        class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
+                    <a href="./history.html" title="History" class="nav-link nav-link--vertical p-0 w-100 m-2 ms-4">
                         <img src="../assets/images/icons/histroy__icon.png" alt="" class="nav_vertical__icon"></a>
                     <!-- button merchandaising -->
                     <a href="./merch.html" title="Merchandaising"
@@ -129,9 +127,9 @@
         </nav>
 
         <!-- main begin -->
-        <main class="main col-xl-11">
+        <main class="main col-xl-11 row p-0">
             <!-- container for two form -->
-            <div class="container_forms bg-light position-relative mt-5 mb-5 row col-xl-8 offset-xl-2 "
+            <div class="container_forms bg-light position-relative m-0 p-0 mt-5 mb-5 row col-xl-8 offset-xl-2 "
                 id="container__forms">
                 <!-- yellow layer to hide form -->
 
@@ -147,7 +145,8 @@
                         <h3 id="yellow_box__subtitle" class="yellow_box__subtitle fs-5 text-dark">
                             Create an account now and get the experience
                         </h3>
-                        <button id="signup__button" class="yellow_box__button col-6  text-light p-2 ps-4 pe-4">Sign up</button>
+                        <button id="signup__button" class="yellow_box__button col-6  text-light p-2 ps-4 pe-4">Sign
+                            up</button>
                         <button id="login__button" class="yellow_box__button col-6  text-light p-2 ps-4 pe-4 d-none">Log
                             in</button>
                     </div>
@@ -188,16 +187,18 @@
                         <!-- form to enter your data -->
                         <form action="mailto:javierrg1992@gamil.com" method="post"
                             class="d-flex flex-column justify-content-center form form--login">
-                            <input required type="email" name="email" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input required type="email" name="email" class="form__input p-1 mb-2"
+                                placeholder="Type email">
                             <input required type="password" name="password" class="form__input p-1 mb-2"
                                 placeholder="Type your password">
                             <input required type="password" name="rep_password" class="form__input p-1 mb-2"
                                 placeholder="Type your password again">
                             <div class="d-flex justify-content-center checkbox">
                                 <input type="checkbox" name="terms" class="form__input me-2 form__input--checkbox">
-                                <label class="form__label" for="terms">Accept terms about private policy</label>
+                                <label class="form__label fs-md-6" for="terms">Accept terms about private policy</label>
                             </div>
-                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Sign up</button>
+                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Sign
+                                up</button>
                         </form>
                     </div>
                 </div>
@@ -238,23 +239,54 @@
                         <!-- form to enter your data -->
                         <form action="mailto:javierrg1992@gamil.com" method="post"
                             class="d-flex flex-column justify-content-center form form--login">
-                            <input required type="email" name="user" class="form__input p-1 mb-2" placeholder="Type email">
+                            <input required type="email" name="user" class="form__input p-1 mb-2"
+                                placeholder="Type email">
                             <input required type="password" name="password" class="form__input p-1 mb-2"
                                 placeholder="Type your password">
                             <div class="d-flex justify-content-center checkbox">
                                 <input type="checkbox" name="terms" class="form__input me-2 form__input--checkbox">
                                 <label class="form__label" for="terms">Remember me</label>
                             </div>
-                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Log in</button>
+                            <button class="form__input mt-2 mb-2 p-2 text-light form__button" type="submit">Log
+                                in</button>
                         </form>
                         <!-- footer div for change form and password link support-->
                         <div class="form__change">
-                            <a class="form__text--link">forget your password?</a>
+                            <a class="form__text--link fs-md-5 fs-lg-3">forget your password?</a>
                         </div>
                     </div>
-                </div>
-
-            </div>
+                </div><!-- final login form -->
+            </div><!-- final container forms -->
+            <!-- begin subcription area -->
+            <section class="container__app mb-5 d-none d-lg-flex col-lg-10 offset-lg-1 row">
+                <article class="app row col-8 p-2 flex-column justify-content-center align-items-center">
+                    <div class="app__content row p-2 bg-light">
+                        <article class="app__left col-4 d-flex flex-column justify-content-center align-items-center">
+                            <p class="app__text text-light align-self-start">Subscription plans</p>
+                            <h3 class="app__title text-center text-light fs-4">
+                                Subcribe For Free
+                            </h3>
+                        </article>
+                        <article class="app__right bg-light col-8">
+                            <header class="app__header d-flex">
+                                <h3 class="app__title me-2">Recive last news</h3>
+                                <h4 class="app__subtitle bg-warning p-1 text-center">Get offers</h4>
+                            </header>
+                            <main class="app__main d-flex justify-content-center pt-4">
+                                <button class="app__button text-light p-2 pe-4 ps-4 m-1 border">Subscribe</button>
+                            </main>
+                        </article>
+                    </div>
+                    <h3 class="app__title text-center bg-light p-3">
+                        Subcribe and get offers and more
+                    </h3>
+                </article>
+                <article class="mobile col-4 position-relative">
+                    <img src="../assets/images/loginRegister/mobile.png" class="mobile__image position-relative" alt="">
+                    <a href="#" class="position-absolute app__download app__download--apple"><img class="app__button--apple" src="../assets/images/loginRegister/download__button__apple.png" alt=""></a>
+                    <a href="#" class="position-absolute app__download app__download--google"><img class="app__button--apple" src="../assets/images/loginRegister/download__button__google.png" alt=""></a>
+                </article>
+            </section>
         </main>
         <!-- footer begin -->
         <footer class="row">

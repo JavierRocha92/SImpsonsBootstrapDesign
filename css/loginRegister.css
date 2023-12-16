@@ -1,3 +1,11 @@
+.main{
+    border: 1px solid black;
+}
+
+.container_forms{
+    border: 5px solid black;
+    
+}
 .container__form{
     padding: 10px 50px;
     gap: 30px;
@@ -17,16 +25,19 @@
     color: black !important;
     border: 2px solid black;
 }
+.form__label,.form__text--link{
+    font-size: 0.8rem;
+}
 .form__input{
     border: 0;
     border: 1px solid black; border-radius: 2px;
     /* background-color: #ccc; */
 }
-.form__button{
+.form__button,.app__button{
     background-color: #F7D756;
     border: 0;
 }
-.form__button:hover{
+.form__button:hover,.app__button:hover{
     outline: 1px solid black;
     color: black !important;
 }
@@ -122,4 +133,38 @@
     to{
         background-image: url(../assets/images/loginRegister/lisa__saxo.png);
     }
+}
+
+/* app container */
+.app__title{
+    font-variant: small-caps;
+}
+.app__left{
+    background-color: #F7D756;
+}
+.app__download{
+    width: 50%;
+    left: 15%;
+    /* transform: translate(-50%); */
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.app__download:hover{
+    transform: scale(1.2);
+}
+.app__download--apple{
+    top: 50%;
+}
+.app__download--google{
+    top: 65%;
+
+}
+.mobile__image{
+    z-index: 1;
+}
+.mobile__image--bg{
+    width: 50%;
+    top: 10px;
+    left: 20px;
+    z-index: 0;
 }
