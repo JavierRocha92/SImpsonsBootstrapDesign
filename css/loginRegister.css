@@ -1,10 +1,5 @@
-.main{
-    border: 1px solid black;
-}
-
-.container_forms{
-    border: 5px solid black;
-    
+.container__forms{
+    margin: 0 auto !important;
 }
 .container__form{
     padding: 10px 50px;
